@@ -1,0 +1,66 @@
+{
+  "kind": "collectionType",
+  "collectionName": "apply_forms",
+  "info": {
+    "singularName": "apply-form",
+    "pluralName": "apply-forms",
+    "displayName": "Apply Form",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "FullName": {
+      "type": "string",
+      "required": true,
+      "maxLength": 150
+    },
+    "Email": {
+      "type": "email",
+      "required": true,
+      "unique": true
+    },
+    "Mobile": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "Country": {
+      "type": "string",
+      "required": true
+    },
+    "Address": {
+      "type": "text",
+      "required": true
+    },
+    "School": {
+      "type": "string",
+      "required": true
+    },
+    "Degree": {
+      "type": "string",
+      "required": false
+    },
+    "PostGraduation": {
+      "type": "string"
+    },
+    "additionalCertificate": {
+      "type": "string"
+    },
+    "Resume": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "files"
+      ]
+    },
+    "careers": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::career.career"
+    }
+  }
+}

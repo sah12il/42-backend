@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_amenities_amenities",
+  "info": {
+    "displayName": "Amenities",
+    "icon": "file-alt"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": false,
+      "unique": false
+    },
+    "count": {
+      "type": "biginteger"
+    }
+  }
+}

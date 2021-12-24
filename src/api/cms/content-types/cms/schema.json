@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cmss",
+  "info": {
+    "singularName": "cms",
+    "pluralName": "cmss",
+    "displayName": "CMS"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string"
+    },
+    "contents": {
+      "type": "richtext"
+    },
+    "Slug": {
+      "type": "uid",
+      "required": true
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": true
+    }
+  }
+}

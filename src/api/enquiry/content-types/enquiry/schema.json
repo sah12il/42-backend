@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "enquiries",
+  "info": {
+    "singularName": "enquiry",
+    "pluralName": "enquiries",
+    "displayName": "Enquiry",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "fullname": {
+      "type": "string",
+      "required": true
+    },
+    "mobile": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "ProjectName": {
+      "type": "string",
+      "required": false,
+      "unique": false
+    },
+    "message": {
+      "type": "text"
+    },
+    "productimage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "files"
+      ]
+    },
+    "product": {
+      "type": "string"
+    },
+    "subject": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "required": true
+    }
+  }
+}
