@@ -46,8 +46,8 @@
     "subject": {
       "type": "string"
     },
-    "slug": {
-      "type": "uid",
+    "title": {
+      "type": "string",
       "required": true
     }
   }

@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "abouts",
+  "info": {
+    "singularName": "about",
+    "pluralName": "abouts",
+    "displayName": "About",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "banner": {
+      "type": "component",
+      "repeatable": false,
+      "component": "banner.banner",
+      "required": true
+    },
+    "Slug": {
+      "type": "uid",
+      "required": true
+    },
+    "cms": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::cms.cms",
+      "mappedBy": "about"
+    },
+    "managements": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::management.management",
+      "mappedBy": "about"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

@@ -14,11 +14,8 @@
   "attributes": {
     "Name": {
       "type": "string",
-      "required": true
-    },
-    "Description": {
-      "type": "richtext",
-      "required": true
+      "required": true,
+      "unique": true
     },
     "Image": {
       "type": "media",
@@ -36,6 +33,25 @@
         "Director",
         "Manager"
       ]
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "SocialMedia": {
+      "type": "component",
+      "repeatable": true,
+      "component": "social-media.social-media"
+    },
+    "about": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::about.about",
+      "inversedBy": "managements"
+    },
+    "quotes": {
+      "type": "text",
+      "required": true
     }
   }
 }

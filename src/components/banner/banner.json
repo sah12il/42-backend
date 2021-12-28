@@ -2,21 +2,25 @@
   "collectionName": "components_banner_banners",
   "info": {
     "displayName": "Banner",
-    "icon": "file"
+    "icon": "file",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "BannerImage": {
-      "allowedTypes": [
-        "images"
-      ],
       "type": "media",
       "multiple": false,
-      "required": true
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
     },
     "BannerTitle": {
       "type": "text",
       "required": true
+    },
+    "description": {
+      "type": "richtext"
     }
   }
 }

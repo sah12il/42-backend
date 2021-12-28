@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_social_media_social_medias",
+  "info": {
+    "displayName": "Social Media",
+    "icon": "user-circle",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": false,
+      "unique": false
+    },
+    "link": {
+      "type": "string",
+      "unique": false,
+      "required": false
+    }
+  }
+}

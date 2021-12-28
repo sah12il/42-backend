@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_architecture_floor_plans",
+  "info": {
+    "displayName": "Floor Plan",
+    "icon": "list"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "floorplanImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "DescriptionImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Description": {
+      "type": "richtext"
+    }
+  }
+}

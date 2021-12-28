@@ -32,6 +32,12 @@
       "type": "media",
       "multiple": true,
       "required": true
+    },
+    "about": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::about.about",
+      "inversedBy": "cms"
     }
   }
 }

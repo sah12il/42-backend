@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "hospitalities",
+  "info": {
+    "singularName": "hospitality",
+    "pluralName": "hospitalities",
+    "displayName": "Hospitality"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

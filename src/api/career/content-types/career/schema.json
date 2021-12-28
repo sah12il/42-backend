@@ -4,21 +4,14 @@
   "info": {
     "singularName": "career",
     "pluralName": "careers",
-    "displayName": "Career"
+    "displayName": "Career",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "position": {
-      "type": "enumeration",
-      "enum": [
-        "Developer",
-        "Engineer"
-      ],
-      "required": true
-    },
     "Description": {
       "type": "richtext",
       "required": true
@@ -33,6 +26,12 @@
         "Halftime"
       ],
       "required": true
+    },
+    "Position": {
+      "type": "string",
+      "required": true,
+      "maxLength": 150,
+      "unique": true
     }
   }
 }

@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "floor_plans",
+  "info": {
+    "singularName": "floor-plan",
+    "pluralName": "floor-plans",
+    "displayName": "Floor Plan",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "Architecture": {
+      "type": "component",
+      "repeatable": true,
+      "component": "architecture.floor-plan"
+    }
+  }
+}
