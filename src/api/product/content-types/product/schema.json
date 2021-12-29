@@ -44,10 +44,6 @@
       "type": "string",
       "required": true
     },
-    "Price": {
-      "type": "string",
-      "required": true
-    },
     "Slug": {
       "type": "uid",
       "required": true
@@ -75,6 +71,11 @@
       "relation": "manyToOne",
       "target": "api::gallery.gallery",
       "inversedBy": "products"
+    },
+    "price": {
+      "type": "component",
+      "repeatable": false,
+      "component": "price.price"
     }
   }
 }

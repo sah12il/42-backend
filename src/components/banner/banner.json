@@ -16,11 +16,12 @@
       ]
     },
     "BannerTitle": {
-      "type": "text",
+      "type": "string",
       "required": true
     },
-    "description": {
-      "type": "richtext"
+    "BannerTitle2": {
+      "type": "string",
+      "required": true
     }
   }
 }

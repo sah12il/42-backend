@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_price_prices",
+  "info": {
+    "displayName": "price",
+    "icon": "pound-sign",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "price": {
+      "type": "decimal",
+      "required": true
+    },
+    "select": {
+      "type": "enumeration",
+      "enum": [
+        "Crores",
+        "Lakhs",
+        "Billions",
+        "Millions"
+      ],
+      "required": true,
+      "default": "Lakhs"
+    }
+  }
+}

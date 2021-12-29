@@ -35,6 +35,10 @@
         "image"
       ],
       "required": true
+    },
+    "Date": {
+      "type": "date",
+      "required": true
     }
   }
 }
